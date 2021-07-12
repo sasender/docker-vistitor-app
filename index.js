@@ -4,7 +4,7 @@ const app = express();
 
 //Provide DNS name/IP address and port
 const client = redis.createClient({
-  host: 'my-redis-server',
+  host: 'redis-server',
   port: 6379
 });
 

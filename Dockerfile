@@ -1,12 +1,23 @@
-#base image
-FROM node:alpine 
-
-#install dependecies
+FROM node:alpine
 WORKDIR /usr/visitorapp
-
 COPY ./package.json ./
 RUN npm install
 COPY ./ ./
+CMD ["npm" ,"start"]
 
-#startup command
-CMD ["npm","start"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
